@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const Home: React.FC = () => {
   return (
     <>
-      <Header>70 лет начала космической эры человечества*</Header>
+      <Header>70 лет начала космической эры человечества</Header>
       <Content>
         <BackgroundVideo src="videos/space-1.mp4" />
       </Content>
