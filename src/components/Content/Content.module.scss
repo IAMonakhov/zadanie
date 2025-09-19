@@ -1,0 +1,16 @@
+.layout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+
+  .content {
+    width: 60%;
+    justify-content: center;
+    margin-top: 1%;
+
+    @media (max-width: 800px) {
+      width: 90%;
+    }
+  }
+}

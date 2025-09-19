@@ -1,0 +1,39 @@
+.layout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+
+  .sub_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header {
+      font-size: 55px;
+      color: white;
+      text-align: center;
+      width: 60%;
+
+      @media (max-width: 800px) {
+        width: 90%;
+      }
+    }
+
+    hr {
+      border: 1px solid yellow;
+      width: 25%;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .sub_header {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 60%;
+      gap: 35px;
+    }
+  }
+}
