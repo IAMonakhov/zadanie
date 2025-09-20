@@ -31,9 +31,11 @@
     .sub_header {
       display: flex;
       justify-content: center;
+      text-align: center;
       flex-wrap: wrap;
       width: 60%;
       gap: 35px;
+      row-gap: 15px;
     }
   }
 }

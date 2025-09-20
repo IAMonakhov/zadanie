@@ -16,6 +16,11 @@
   pointer-events: none;
 }
 
+.non_effects {
+  color: inherit;
+  text-decoration: none;
+}
+
 .active::before,
 .active::after {
   content: "";

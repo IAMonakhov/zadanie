@@ -4,7 +4,7 @@ import "@/styles/global.scss";
 
 export const metadata: Metadata = {
   title: "Главная",
-  icons: "images/favicon.png"
+  icons: "images/favicon.png",
 };
 
 export default function RootLayout({
