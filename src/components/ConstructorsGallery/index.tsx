@@ -21,7 +21,7 @@ const ConstructorsGallery: React.FC = () => {
       />
       <ObjectCard
         href={`/famous-constructors/${encodeURIComponent("Вернер фон Браун")}`}
-        imgSrc="images/braun.png"
+        imgSrc="images/braun.jpg"
         header="Вернер фон Браун"
       />
     </div>

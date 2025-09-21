@@ -5,10 +5,21 @@ interface IBackgroundVideoProps {
   brightness?: number;
 }
 
-const BackgroundVideo: React.FC<IBackgroundVideoProps> = ({ src, brightness = 0.7 }) => {
+const BackgroundVideo: React.FC<IBackgroundVideoProps> = ({
+  src,
+  brightness = 0.7,
+}) => {
   return (
     <div className={classes.video}>
-      <video style={{filter: `brightness(${brightness})` }} autoPlay muted loop playsInline preload="auto">
+      <video
+        style={{ filter: `brightness(${brightness})` }}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        poster="/images/blackscreen.jpg"
+      >
         <source src={src} />
       </video>
     </div>
