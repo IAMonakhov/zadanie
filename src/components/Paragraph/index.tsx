@@ -1,6 +1,7 @@
 import classes from "./Paragraph.module.scss";
 
 interface IParagraphProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   children: string | React.ReactNode | any;
 }
 

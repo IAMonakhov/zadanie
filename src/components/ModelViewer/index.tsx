@@ -13,7 +13,7 @@ const ModelViewer: React.FC<IModelViewerProps> = ({ src }) => {
   const modelViewerRef = useRef<HTMLElement>(null);
 
   return (
-    // @ts-ignore
+    // @ts-expect-error qwe
     <model-viewer
       ref={modelViewerRef}
       src={src}
