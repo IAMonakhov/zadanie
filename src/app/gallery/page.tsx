@@ -8,7 +8,7 @@ const GalleryPage = () => {
     <>
       <Header>Галерея 3D объектов</Header>
       <Content width="90%">
-        <BackgroundVideo src="/videos/space-1.mp4" />
+        <BackgroundVideo src="/videos/space-5.mp4" brightness={0.4} />
         <ObjectsGallery />
       </Content>
     </>

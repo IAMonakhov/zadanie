@@ -1,7 +1,7 @@
 import classes from "./Paragraph.module.scss";
 
 interface IParagraphProps {
-  children: string | React.ReactNode;
+  children: string | React.ReactNode | any;
 }
 
 const Paragraph: React.FC<IParagraphProps> = ({ children }) => {

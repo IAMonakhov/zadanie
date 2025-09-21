@@ -1,7 +1,19 @@
+import { notFound } from "next/navigation";
+
 import Content from "@/components/Content";
 import BackgroundVideo from "@/components/BackgroundVideo";
 import Header from "@/components/Header";
-import ModelViewer from "@/components/ModelViewer"
+import ModelViewer from "@/components/ModelViewer";
+
+const VALID_MODELS = [
+  "Земля",
+  "Марс",
+  "Черная дыра",
+  "МКС",
+  "Луна",
+  "Спутник-1",
+  "Восток-1",
+];
 
 const ModelPage = async ({
   params,
@@ -9,6 +21,10 @@ const ModelPage = async ({
   params: Promise<{ model: string }>;
 }) => {
   const model = await decodeURIComponent((await params).model);
+
+  if (!VALID_MODELS.includes(model)) {
+    notFound();
+  }
 
   return (
     <>
@@ -27,7 +43,7 @@ export async function generateMetadata({
   params: Promise<{ model: string }>;
 }) {
   const model = await decodeURIComponent((await params).model);
-  
+
   return {
     title: `${model} - 3D модель`,
   };
