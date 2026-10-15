@@ -18,7 +18,7 @@ const Header: React.FC<IHeaderProps> = ({ children }) => {
           <Link href="/first-flight">Первый полет человека в космос</Link>
           <Link href="/first-woman">Первая женщина космонавт</Link>
           <Link href="/famous-constructors">Известные конструкторы</Link>
-          <Link href="/gallery">Галерея 3d объектов</Link>
+          <Link href="/gallery">Галерея 3D объектов</Link>
         </div>
       </div>
     </div>
